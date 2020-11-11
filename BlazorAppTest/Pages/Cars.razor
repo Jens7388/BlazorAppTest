@@ -8,17 +8,19 @@ else
 {
     <h1>Cars</h1>
     <p>Here are some cars you can buy</p>
-    @foreach(Car car in cars)
-    {
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="@car.ImgPath" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">@car.Name</h5>
-                <p class="card-text">Price: @car.Price <br />Location: @car.Location<br />@car.Description </p>
-                <a href="#" class="btn btn-primary">Buy</a>
+    <div class="d-flex flex-wrap space justify-content-between">
+        @foreach(Car car in cars)
+        {
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="@car.ImgPath" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">@car.Name</h5>
+                    <p class="card-text">Price: @car.Price <br />Location: @car.Location<br />@car.Description </p>
+                    <a href="#" class="btn btn-primary">Buy</a>
+                </div>
             </div>
-        </div>
-    }
+        }
+    </div>
 }
 @code {
     private Car[] cars;
