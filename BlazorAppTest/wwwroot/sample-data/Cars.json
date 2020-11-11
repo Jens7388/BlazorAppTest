@@ -1,0 +1,44 @@
+[
+  {
+    "imgPath": "../Images/f40.jpg",
+    "name": "Ferrari F40",
+    "location": "Monaco",
+    "price": "666.000 USD",
+    "description": "Starts and runs well, but with slight overheating issues"
+  },
+  {
+    "imgPath": "lol",
+    "name": "Porsche Ferdinand",
+    "location": "Germany",
+    "price": "69.000.000 DMark",
+    "description": "Extremely rare! Transmission broken, has not run at all for 75 years, previously owned by famous Austrian painter."
+  },
+  {
+    "imgPath": "lol",
+    "name": "Reliant Robin",
+    "location": "United Kingdom",
+    "price": "420 GBP",
+    "description": "Previously owned by elderly gentleman, runs perfectly, but has slight body damage."
+  },
+  {
+    "imgPath": "lol",
+    "name": "Porsche Carrera GT",
+    "location": "Europe",
+    "price": "1 Paul Walker",
+    "description": "Found in perfect condition in an oil sheiks garden. Car can at times randomly steer towards trees. Please excercise caution when driving."
+  },
+  {
+    "imgPath": "lol",
+    "name": "Honda Civic",
+    "location": "United States",
+    "price": "69.420 USD",
+    "description": "Runs smoothly, has aftermarket bodykit, spoiler, exhaust for extra horse power"
+  },
+  {
+    "imgPath": "lol",
+    "name": "Toyota Supra",
+    "location": "Japan",
+    "price": "420.690.666 Yen",
+    "description": "'Dude is that a Supra?' Yes, and you want it."
+  }
+]

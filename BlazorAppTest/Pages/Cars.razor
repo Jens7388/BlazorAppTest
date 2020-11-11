@@ -1,0 +1,43 @@
+﻿@page "/cars"
+@inject HttpClient Http
+@if(cars == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <h1>Cars</h1>
+    <p>Here are some cars you can buy</p>
+    @foreach(Car car in cars)
+    {
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="@car.ImgPath" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">@car.Name</h5>
+                <p class="card-text">Price: @car.Price <br />Location: @car.Location<br />@car.Description </p>
+                <a href="#" class="btn btn-primary">Buy</a>
+            </div>
+        </div>
+    }
+}
+@code {
+    private Car[] cars;
+
+    protected override async Task OnInitializedAsync()
+    {
+        cars = await Http.GetFromJsonAsync<Car[]>("sample-data/Cars.json");
+    }
+
+    public class Car
+    {
+        public string ImgPath { get; set; }
+
+        public string Name { get; set; }
+
+        public string Location { get; set; }
+
+        public string Price { get; set; }
+
+        public string Description { get; set; }
+    }
+}
